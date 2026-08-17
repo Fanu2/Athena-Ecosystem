@@ -6,7 +6,7 @@ from .models import ToolRegistryEntry
 
 def scan_tools(
     tools_directory: str
-) -> list[ToolRegistryEntry]:
+):
 
     tools = []
 
@@ -29,6 +29,7 @@ def scan_tools(
 
         tools.append(
             ToolRegistryEntry(
+
                 name=data.get(
                     "name",
                     ""
@@ -58,6 +59,21 @@ def scan_tools(
                 permissions=data.get(
                     "permissions",
                     {}
+                ),
+
+                capabilities=data.get(
+                    "capabilities",
+                    []
+                ),
+
+                inputs=data.get(
+                    "inputs",
+                    []
+                ),
+
+                outputs=data.get(
+                    "outputs",
+                    []
                 )
             )
         )

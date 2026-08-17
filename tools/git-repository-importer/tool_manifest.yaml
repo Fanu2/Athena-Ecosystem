@@ -14,3 +14,13 @@ permissions:
   filesystem:
     read: true
     write: true
+
+capabilities:
+  - repository_import
+  - repository_analysis
+
+inputs:
+  - git_repository
+
+outputs:
+  - akp

@@ -14,3 +14,13 @@ permissions:
   filesystem:
     read: true
     write: true
+
+capabilities:
+  - conversation_import
+  - personal_archive_import
+
+inputs:
+  - messenger_export
+
+outputs:
+  - akp

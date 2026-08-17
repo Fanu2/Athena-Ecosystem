@@ -14,3 +14,13 @@ permissions:
   filesystem:
     read: true
     write: true
+
+capabilities:
+  - conversation_import
+  - ai_archive_import
+
+inputs:
+  - claude_export
+
+outputs:
+  - akp

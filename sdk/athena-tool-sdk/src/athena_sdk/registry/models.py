@@ -4,9 +4,6 @@ from typing import Any
 
 @dataclass
 class ToolRegistryEntry:
-    """
-    Athena Tool Registry Entry.
-    """
 
     name: str
 
@@ -22,6 +19,18 @@ class ToolRegistryEntry:
 
     permissions: dict[str, Any] = field(
         default_factory=dict
+    )
+
+    capabilities: list[str] = field(
+        default_factory=list
+    )
+
+    inputs: list[str] = field(
+        default_factory=list
+    )
+
+    outputs: list[str] = field(
+        default_factory=list
     )
 
     state: str = "verified"

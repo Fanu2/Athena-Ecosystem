@@ -15,13 +15,9 @@ def main():
         dest="command"
     )
 
-    sub.add_parser(
-        "list"
-    )
-
-    sub.add_parser(
-        "status"
-    )
+    sub.add_parser("list")
+    sub.add_parser("status")
+    sub.add_parser("capabilities")
 
     args = parser.parse_args()
 
@@ -29,27 +25,55 @@ def main():
         "tools"
     )
 
-    if args.command == "list":
 
-        print("Athena Tools")
-        print("=============")
+    if args.command == "capabilities":
+
+        print(
+            "Athena Tool Capabilities"
+        )
+
+        print(
+            "========================"
+        )
 
         for tool in tools:
 
+            print()
             print(
-                f"{tool.name:45} {tool.version}"
+                tool.name
+            )
+
+            print(
+                "Capabilities:",
+                tool.capabilities
+            )
+
+            print(
+                "Inputs:",
+                tool.inputs
+            )
+
+            print(
+                "Outputs:",
+                tool.outputs
+            )
+
+
+    elif args.command == "list":
+
+        for tool in tools:
+            print(
+                tool.name,
+                tool.version
             )
 
 
     elif args.command == "status":
 
-        print("Athena Tool Status")
-        print("==================")
-
         for tool in tools:
-
             print(
-                f"{tool.name:45} {tool.state}"
+                tool.name,
+                tool.state
             )
 
 
