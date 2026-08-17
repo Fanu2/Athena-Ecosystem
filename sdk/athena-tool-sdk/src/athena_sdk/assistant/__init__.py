@@ -18,6 +18,9 @@ from .response import (
 from .context import (
     build_workspace_context,
 )
+from .memory import (
+    build_memory_context,
+)
 
 
 __all__ = [
@@ -31,4 +34,5 @@ __all__ = [
     "AssistantResponse",
     "compose_response",
     "build_workspace_context",
+    "build_memory_context",
 ]
