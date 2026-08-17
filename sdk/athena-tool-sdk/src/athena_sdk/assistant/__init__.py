@@ -11,6 +11,10 @@ from .selector import (
 from .orchestrator import (
     execute_request,
 )
+from .response import (
+    AssistantResponse,
+    compose_response,
+)
 
 
 __all__ = [
@@ -21,4 +25,6 @@ __all__ = [
     "create_plan",
     "select_tool",
     "execute_request",
+    "AssistantResponse",
+    "compose_response",
 ]
