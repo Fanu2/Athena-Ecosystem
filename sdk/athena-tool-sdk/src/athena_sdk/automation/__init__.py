@@ -13,6 +13,11 @@ from .queue import (
     TaskQueue,
 )
 
+from .safety import (
+    AutomationPolicy,
+    SafeAutomationEngine,
+)
+
 
 __all__ = [
     "WorkflowScheduler",
@@ -21,4 +26,6 @@ __all__ = [
     "TriggerRegistry",
     "AutomationTask",
     "TaskQueue",
+    "AutomationPolicy",
+    "SafeAutomationEngine",
 ]
