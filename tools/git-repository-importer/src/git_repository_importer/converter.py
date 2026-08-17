@@ -10,7 +10,8 @@ from athena_sdk.provenance import create_provenance
 
 
 def repository_to_akp(
-    repository: dict
+    repository: dict,
+    analysis: dict | None = None
 ) -> KnowledgePackage:
     """
     Convert repository metadata into AKP.
@@ -30,7 +31,20 @@ Documentation:
 {repository['readme']}
 """
 
+    metadata = {
+        "file_count":
+            len(repository["files"])
+    }
+
+    if analysis:
+
+        metadata[
+            "repository_analysis"
+        ] = analysis
+
+
     return KnowledgePackage(
+
         title=repository["name"],
 
         content=content,
@@ -42,19 +56,19 @@ Documentation:
 
         confidence={
             "level": "high",
-            "reason": "Extracted from local repository"
+            "reason":
+                "Extracted from local repository"
         },
 
         evidence={
-            "source_type": "repository files"
+            "source_type":
+                "repository files"
         },
 
         provenance=create_provenance(
             "athena-git-repository-importer",
-            "0.1"
+            "0.2"
         ),
 
-        metadata={
-            "file_count": len(repository["files"])
-        }
+        metadata=metadata
     )

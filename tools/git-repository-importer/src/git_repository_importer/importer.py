@@ -1,22 +1,27 @@
 from .parser import parse_repository
 from .converter import repository_to_akp
 from .exporter import export_akp
+from .intelligence.analyzer import (
+    analyze_repository
+)
 
 
 def import_repository(
-    repo_path: str,
-    output_dir: str
-) -> dict:
-    """
-    Import a Git repository into AKP.
-    """
+    repo_path,
+    output_dir
+):
 
     repository = parse_repository(
         repo_path
     )
 
+    analysis = analyze_repository(
+        repo_path
+    )
+
     package = repository_to_akp(
-        repository
+        repository,
+        analysis
     )
 
     export_akp(
@@ -27,5 +32,8 @@ def import_repository(
 
     return {
         "status": "success",
-        "repository": repository["name"]
+        "repository":
+            repository["name"],
+        "analysis":
+            analysis
     }
