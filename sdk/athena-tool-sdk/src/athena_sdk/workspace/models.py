@@ -1,5 +1,9 @@
 from dataclasses import dataclass, field
 
+from .memory import (
+    MemoryItem
+)
+
 
 @dataclass
 class Workspace:
@@ -12,6 +16,10 @@ class Workspace:
         default_factory=list
     )
 
+    memories: list[MemoryItem] = field(
+        default_factory=list
+    )
+
 
     def add_knowledge(
         self,
@@ -20,4 +28,10 @@ class Workspace:
 
         self.knowledge.append(
             item
+        )
+
+        self.memories.append(
+            MemoryItem(
+                content=item
+            )
         )
