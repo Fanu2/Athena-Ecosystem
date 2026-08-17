@@ -16,6 +16,10 @@ from .workflow import (
     WorkflowStep,
 )
 
+from .memory import (
+    AssistantMemory,
+)
+
 
 __all__ = [
     "Preference",
@@ -24,4 +28,5 @@ __all__ = [
     "ContextContinuity",
     "Workflow",
     "WorkflowStep",
+    "AssistantMemory",
 ]
