@@ -17,6 +17,11 @@ from .evidence import (
     link_evidence,
 )
 
+from .navigation import (
+    find_related_nodes,
+    build_path,
+)
+
 
 __all__ = [
     "KnowledgeGraph",
@@ -26,4 +31,6 @@ __all__ = [
     "link_sources",
     "create_evidence_node",
     "link_evidence",
+    "find_related_nodes",
+    "build_path",
 ]
