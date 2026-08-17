@@ -13,6 +13,11 @@ from .backup import (
     BackupManifest,
 )
 
+from .migration import (
+    MigrationManifest,
+    WorkspaceMigration,
+)
+
 
 __all__ = [
     "EnvironmentManager",
@@ -21,4 +26,6 @@ __all__ = [
     "PackageBuilder",
     "BackupManager",
     "BackupManifest",
+    "MigrationManifest",
+    "WorkspaceMigration",
 ]
