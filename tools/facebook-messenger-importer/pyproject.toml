@@ -1,0 +1,12 @@
+[project]
+name = "athena-facebook-messenger-importer"
+version = "0.1.0"
+description = "Facebook Messenger importer for Athena Tool Ecosystem"
+requires-python = ">=3.14"
+
+dependencies = [
+    "athena-tool-sdk"
+]
+
+[project.scripts]
+athena-messenger = "facebook_messenger_importer.cli:main"

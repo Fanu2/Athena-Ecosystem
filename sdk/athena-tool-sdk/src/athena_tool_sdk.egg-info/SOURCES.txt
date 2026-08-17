@@ -4,6 +4,9 @@ src/athena_sdk/akp/__init__.py
 src/athena_sdk/akp/models.py
 src/athena_sdk/akp/serializer.py
 src/athena_sdk/akp/validator.py
+src/athena_sdk/conversation/__init__.py
+src/athena_sdk/conversation/models.py
+src/athena_sdk/conversation/normalizer.py
 src/athena_sdk/logging/__init__.py
 src/athena_sdk/logging/logger.py
 src/athena_sdk/manifest/__init__.py

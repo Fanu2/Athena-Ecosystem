@@ -1,0 +1,40 @@
+[
+  {
+    "thread_name": "Family Conversation",
+    "participants": [
+      "Jasvir",
+      "Family Member"
+    ],
+    "messages": [
+      {
+        "sender_name": "Family Member",
+        "timestamp_ms": 1720000000000,
+        "content": "Hello, how are you?"
+      },
+      {
+        "sender_name": "Jasvir",
+        "timestamp_ms": 1720001000000,
+        "content": "I am fine. Working on Athena."
+      }
+    ]
+  },
+  {
+    "thread_name": "Project Discussion",
+    "participants": [
+      "Jasvir",
+      "Friend"
+    ],
+    "messages": [
+      {
+        "sender_name": "Friend",
+        "timestamp_ms": 1720100000000,
+        "content": "How is the AI project going?"
+      },
+      {
+        "sender_name": "Jasvir",
+        "timestamp_ms": 1720101000000,
+        "content": "The tool ecosystem is progressing."
+      }
+    ]
+  }
+]

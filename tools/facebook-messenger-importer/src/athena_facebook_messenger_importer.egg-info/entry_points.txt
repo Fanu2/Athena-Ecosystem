@@ -1,0 +1,2 @@
+[console_scripts]
+athena-messenger = facebook_messenger_importer.cli:main

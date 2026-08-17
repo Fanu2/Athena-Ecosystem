@@ -1,0 +1,16 @@
+name: athena-facebook-messenger-importer
+
+version: "0.1"
+
+description: >
+  Import Facebook Messenger exports
+  into Athena Knowledge Packages.
+
+akp_versions:
+  - "1.0"
+
+permissions:
+  network: false
+  filesystem:
+    read: true
+    write: true
