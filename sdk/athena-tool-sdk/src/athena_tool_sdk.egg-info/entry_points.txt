@@ -1,0 +1,2 @@
+[console_scripts]
+athena-tools = athena_sdk.registry_cli.main:main

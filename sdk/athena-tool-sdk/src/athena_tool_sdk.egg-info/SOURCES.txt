@@ -14,7 +14,15 @@ src/athena_sdk/manifest/loader.py
 src/athena_sdk/manifest/models.py
 src/athena_sdk/provenance/__init__.py
 src/athena_sdk/provenance/tracker.py
+src/athena_sdk/registry/__init__.py
+src/athena_sdk/registry/compatibility.py
+src/athena_sdk/registry/lifecycle.py
+src/athena_sdk/registry/models.py
+src/athena_sdk/registry/scanner.py
+src/athena_sdk/registry_cli/__init__.py
+src/athena_sdk/registry_cli/main.py
 src/athena_tool_sdk.egg-info/PKG-INFO
 src/athena_tool_sdk.egg-info/SOURCES.txt
 src/athena_tool_sdk.egg-info/dependency_links.txt
+src/athena_tool_sdk.egg-info/entry_points.txt
 src/athena_tool_sdk.egg-info/top_level.txt

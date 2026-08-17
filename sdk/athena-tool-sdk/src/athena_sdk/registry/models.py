@@ -23,3 +23,5 @@ class ToolRegistryEntry:
     permissions: dict[str, Any] = field(
         default_factory=dict
     )
+
+    state: str = "verified"
