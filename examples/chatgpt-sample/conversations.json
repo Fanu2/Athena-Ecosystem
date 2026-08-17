@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Athena Architecture Discussion",
+    "create_time": 1720000000,
+    "update_time": 1720001000,
+    "mapping": {
+      "node-1": {
+        "message": {
+          "author": {
+            "role": "user"
+          },
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "How should Athena handle external tools?"
+            ]
+          }
+        }
+      },
+      "node-2": {
+        "message": {
+          "author": {
+            "role": "assistant"
+          },
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Athena should use external tools with a stable knowledge boundary."
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "AI Memory Import Test",
+    "create_time": 1720100000,
+    "mapping": {
+      "node-3": {
+        "message": {
+          "author": {
+            "role": "user"
+          },
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Can ChatGPT conversations be imported?"
+            ]
+          }
+        }
+      },
+      "node-4": {
+        "message": {
+          "author": {
+            "role": "assistant"
+          },
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Yes, after conversion into a validated Athena Knowledge Package."
+            ]
+          }
+        }
+      }
+    }
+  }
+]
