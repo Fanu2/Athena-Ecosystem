@@ -1,0 +1,2 @@
+[console_scripts]
+athena-gemini = gemini_importer.cli:main

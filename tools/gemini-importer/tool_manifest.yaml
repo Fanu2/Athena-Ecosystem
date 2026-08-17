@@ -1,0 +1,16 @@
+name: athena-gemini-importer
+
+version: "0.1"
+
+description: >
+  Import Gemini conversation exports
+  into Athena Knowledge Packages.
+
+akp_versions:
+  - "1.0"
+
+permissions:
+  network: false
+  filesystem:
+    read: true
+    write: true

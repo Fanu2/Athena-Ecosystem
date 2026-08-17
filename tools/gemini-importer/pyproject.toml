@@ -1,0 +1,12 @@
+[project]
+name = "athena-gemini-importer"
+version = "0.1.0"
+description = "Gemini importer for Athena Tool Ecosystem"
+requires-python = ">=3.14"
+
+dependencies = [
+    "athena-tool-sdk"
+]
+
+[project.scripts]
+athena-gemini = "gemini_importer.cli:main"
