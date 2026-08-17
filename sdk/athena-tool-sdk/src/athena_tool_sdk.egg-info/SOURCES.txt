@@ -18,6 +18,7 @@ src/athena_sdk/registry/__init__.py
 src/athena_sdk/registry/compatibility.py
 src/athena_sdk/registry/lifecycle.py
 src/athena_sdk/registry/models.py
+src/athena_sdk/registry/query.py
 src/athena_sdk/registry/scanner.py
 src/athena_sdk/registry_cli/__init__.py
 src/athena_sdk/registry_cli/main.py
