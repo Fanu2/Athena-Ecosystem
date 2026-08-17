@@ -1,0 +1,12 @@
+[project]
+name = "athena-chatgpt-importer"
+version = "0.1.0"
+description = "ChatGPT importer for Athena Tool Ecosystem"
+requires-python = ">=3.14"
+
+dependencies = [
+    "athena-tool-sdk"
+]
+
+[project.scripts]
+athena-chatgpt = "chatgpt_importer.cli:main"
