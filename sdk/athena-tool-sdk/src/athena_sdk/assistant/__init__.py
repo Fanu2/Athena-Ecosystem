@@ -15,6 +15,9 @@ from .response import (
     AssistantResponse,
     compose_response,
 )
+from .context import (
+    build_workspace_context,
+)
 
 
 __all__ = [
@@ -27,4 +30,5 @@ __all__ = [
     "execute_request",
     "AssistantResponse",
     "compose_response",
+    "build_workspace_context",
 ]
