@@ -3,7 +3,13 @@ from .registry import (
     ModelInfo,
 )
 
+from .profile import (
+    ModelProfile,
+)
+
+
 __all__ = [
     "ModelRegistry",
     "ModelInfo",
+    "ModelProfile",
 ]
