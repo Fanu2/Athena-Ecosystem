@@ -22,6 +22,11 @@ from .navigation import (
     build_path,
 )
 
+from .entities import (
+    Entity,
+    extract_entities,
+)
+
 
 __all__ = [
     "KnowledgeGraph",
@@ -33,4 +38,6 @@ __all__ = [
     "link_evidence",
     "find_related_nodes",
     "build_path",
+    "Entity",
+    "extract_entities",
 ]
