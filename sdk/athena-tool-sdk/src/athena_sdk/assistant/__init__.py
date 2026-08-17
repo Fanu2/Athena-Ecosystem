@@ -8,6 +8,9 @@ from .planner import (
 from .selector import (
     select_tool,
 )
+from .orchestrator import (
+    execute_request,
+)
 
 
 __all__ = [
@@ -17,4 +20,5 @@ __all__ = [
     "ExecutionPlan",
     "create_plan",
     "select_tool",
+    "execute_request",
 ]
