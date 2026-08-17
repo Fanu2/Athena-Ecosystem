@@ -43,6 +43,11 @@ from .query import (
     related_nodes,
 )
 
+from .reasoning import (
+    EvidenceScore,
+    evaluate_evidence_path,
+)
+
 
 __all__ = [
     "KnowledgeGraph",
@@ -63,4 +68,6 @@ __all__ = [
     "find_node_by_id",
     "search_nodes",
     "related_nodes",
+    "EvidenceScore",
+    "evaluate_evidence_path",
 ]
