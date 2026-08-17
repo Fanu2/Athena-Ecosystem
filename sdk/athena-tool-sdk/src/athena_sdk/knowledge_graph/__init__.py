@@ -31,6 +31,11 @@ from .discovery import (
     discover_relationships,
 )
 
+from .storage import (
+    save_graph,
+    load_graph,
+)
+
 
 __all__ = [
     "KnowledgeGraph",
@@ -45,4 +50,6 @@ __all__ = [
     "Entity",
     "extract_entities",
     "discover_relationships",
+    "save_graph",
+    "load_graph",
 ]
