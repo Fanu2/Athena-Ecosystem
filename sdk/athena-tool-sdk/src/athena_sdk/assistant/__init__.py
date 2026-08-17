@@ -5,6 +5,9 @@ from .planner import (
     ExecutionPlan,
     create_plan,
 )
+from .selector import (
+    select_tool,
+)
 
 
 __all__ = [
@@ -13,4 +16,5 @@ __all__ = [
     "PlanStep",
     "ExecutionPlan",
     "create_plan",
+    "select_tool",
 ]
