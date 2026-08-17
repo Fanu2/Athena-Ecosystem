@@ -8,9 +8,17 @@ from .triggers import (
     TriggerRegistry,
 )
 
+from .queue import (
+    AutomationTask,
+    TaskQueue,
+)
+
+
 __all__ = [
     "WorkflowScheduler",
     "ScheduledTask",
     "EventTrigger",
     "TriggerRegistry",
+    "AutomationTask",
+    "TaskQueue",
 ]
