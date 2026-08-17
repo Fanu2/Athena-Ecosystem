@@ -27,6 +27,10 @@ from .entities import (
     extract_entities,
 )
 
+from .discovery import (
+    discover_relationships,
+)
+
 
 __all__ = [
     "KnowledgeGraph",
@@ -40,4 +44,5 @@ __all__ = [
     "build_path",
     "Entity",
     "extract_entities",
+    "discover_relationships",
 ]
