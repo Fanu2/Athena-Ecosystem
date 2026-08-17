@@ -36,6 +36,13 @@ from .storage import (
     load_graph,
 )
 
+from .query import (
+    find_nodes_by_type,
+    find_node_by_id,
+    search_nodes,
+    related_nodes,
+)
+
 
 __all__ = [
     "KnowledgeGraph",
@@ -52,4 +59,8 @@ __all__ = [
     "discover_relationships",
     "save_graph",
     "load_graph",
+    "find_nodes_by_type",
+    "find_node_by_id",
+    "search_nodes",
+    "related_nodes",
 ]
