@@ -12,6 +12,11 @@ from .relationships import (
     link_sources,
 )
 
+from .evidence import (
+    create_evidence_node,
+    link_evidence,
+)
+
 
 __all__ = [
     "KnowledgeGraph",
@@ -19,4 +24,6 @@ __all__ = [
     "KnowledgeEdge",
     "akp_to_node",
     "link_sources",
+    "create_evidence_node",
+    "link_evidence",
 ]
