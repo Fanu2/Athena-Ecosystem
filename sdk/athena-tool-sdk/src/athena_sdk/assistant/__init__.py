@@ -21,6 +21,9 @@ from .context import (
 from .memory import (
     build_memory_context,
 )
+from .graph_context import (
+    build_graph_context,
+)
 
 
 __all__ = [
@@ -35,4 +38,5 @@ __all__ = [
     "compose_response",
     "build_workspace_context",
     "build_memory_context",
+    "build_graph_context",
 ]
