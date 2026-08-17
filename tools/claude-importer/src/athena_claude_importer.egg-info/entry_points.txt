@@ -1,0 +1,2 @@
+[console_scripts]
+athena-claude = claude_importer.cli:main

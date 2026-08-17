@@ -1,0 +1,32 @@
+[
+  {
+    "uuid": "claude-demo-001",
+    "name": "Athena Tool Discussion",
+    "created_at": "2026-08-17T00:00:00Z",
+    "chat_messages": [
+      {
+        "sender": "human",
+        "text": "How should Athena use external tools?"
+      },
+      {
+        "sender": "assistant",
+        "text": "External tools should provide capabilities through stable boundaries."
+      }
+    ]
+  },
+  {
+    "uuid": "claude-demo-002",
+    "name": "Knowledge Package Test",
+    "created_at": "2026-08-17T01:00:00Z",
+    "chat_messages": [
+      {
+        "sender": "human",
+        "text": "What is an AKP?"
+      },
+      {
+        "sender": "assistant",
+        "text": "An Athena Knowledge Package is a validated knowledge boundary."
+      }
+    ]
+  }
+]

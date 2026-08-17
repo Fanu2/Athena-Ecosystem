@@ -1,0 +1,16 @@
+name: athena-claude-importer
+
+version: "0.1"
+
+description: >
+  Import Claude conversation exports
+  into Athena Knowledge Packages.
+
+akp_versions:
+  - "1.0"
+
+permissions:
+  network: false
+  filesystem:
+    read: true
+    write: true
