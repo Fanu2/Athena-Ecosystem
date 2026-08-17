@@ -1,0 +1,16 @@
+name: athena-git-repository-importer
+
+version: "0.1"
+
+description: >
+  Analyze Git repositories and convert
+  project knowledge into Athena Knowledge Packages.
+
+akp_versions:
+  - "1.0"
+
+permissions:
+  network: false
+  filesystem:
+    read: true
+    write: true

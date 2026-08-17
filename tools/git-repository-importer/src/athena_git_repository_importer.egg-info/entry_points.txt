@@ -1,0 +1,2 @@
+[console_scripts]
+athena-git-import = git_repository_importer.cli:main
