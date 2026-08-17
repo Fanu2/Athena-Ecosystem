@@ -23,9 +23,7 @@ def scan_tools(
             encoding="utf-8"
         ) as f:
 
-            data = yaml.safe_load(
-                f
-            )
+            data = yaml.safe_load(f)
 
         tools.append(
             ToolRegistryEntry(
@@ -73,6 +71,11 @@ def scan_tools(
 
                 outputs=data.get(
                     "outputs",
+                    []
+                ),
+
+                command=data.get(
+                    "command",
                     []
                 )
             )

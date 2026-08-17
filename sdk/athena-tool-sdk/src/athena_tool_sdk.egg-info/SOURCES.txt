@@ -25,6 +25,7 @@ src/athena_sdk/registry_cli/main.py
 src/athena_sdk/runtime/__init__.py
 src/athena_sdk/runtime/manager.py
 src/athena_sdk/runtime/models.py
+src/athena_sdk/runtime/registry_executor.py
 src/athena_sdk/runtime/validator.py
 src/athena_tool_sdk.egg-info/PKG-INFO
 src/athena_tool_sdk.egg-info/SOURCES.txt

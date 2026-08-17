@@ -24,3 +24,6 @@ inputs:
 
 outputs:
   - akp
+
+command:
+  - athena-git-import

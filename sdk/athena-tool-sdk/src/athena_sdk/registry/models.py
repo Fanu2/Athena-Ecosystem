@@ -33,4 +33,8 @@ class ToolRegistryEntry:
         default_factory=list
     )
 
+    command: list[str] = field(
+        default_factory=list
+    )
+
     state: str = "verified"
