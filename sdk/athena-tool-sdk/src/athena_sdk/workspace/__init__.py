@@ -17,6 +17,10 @@ from .memory import (
     mark_important,
 )
 
+from .ranking import (
+    rank_memory,
+)
+
 
 __all__ = [
     "Workspace",
@@ -26,4 +30,5 @@ __all__ = [
     "MemoryItem",
     "mark_accessed",
     "mark_important",
+    "rank_memory",
 ]
