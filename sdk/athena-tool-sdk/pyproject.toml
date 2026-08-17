@@ -1,0 +1,11 @@
+[project]
+name = "athena-tool-sdk"
+version = "0.1.0"
+description = "Athena Tool Ecosystem SDK"
+requires-python = ">=3.14"
+
+[build-system]
+requires = [
+    "setuptools>=68"
+]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,2 @@
+[console_scripts]
+athena-deepseek = deepseek_importer.cli:main
