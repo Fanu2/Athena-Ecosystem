@@ -3,7 +3,14 @@ from .scheduler import (
     ScheduledTask,
 )
 
+from .triggers import (
+    EventTrigger,
+    TriggerRegistry,
+)
+
 __all__ = [
     "WorkflowScheduler",
     "ScheduledTask",
+    "EventTrigger",
+    "TriggerRegistry",
 ]
