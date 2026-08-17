@@ -11,10 +11,17 @@ from .context import (
     ContextContinuity,
 )
 
+from .workflow import (
+    Workflow,
+    WorkflowStep,
+)
+
 
 __all__ = [
     "Preference",
     "PreferenceStore",
     "ContextItem",
     "ContextContinuity",
+    "Workflow",
+    "WorkflowStep",
 ]
